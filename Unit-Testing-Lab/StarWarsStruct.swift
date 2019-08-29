@@ -8,7 +8,7 @@
 
 import Foundation
 struct StarWars: Codable {
-    var results: [Results]
+    let results: [Results]
     static func getEpisodes(from data: Data) -> [Results] {
         do {
             let episodes = try JSONDecoder().decode(StarWars.self, from: data)

@@ -8,10 +8,10 @@
 
 import Foundation
 struct Jokes: Codable {
-    var id: Int
-    var type: String
-    var setup: String
-    var punchline: String
+    let id: Int
+    let type: String
+    let setup: String
+    let punchline: String
     
     static func getJokes(from data: Data) -> [Jokes] {
         do {
