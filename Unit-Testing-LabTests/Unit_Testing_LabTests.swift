@@ -78,8 +78,8 @@ class Unit_Testing_LabTests: XCTestCase {
         XCTAssertTrue(true, "there are opening crawls")
     }
     private func getDataFromStarWarsJSON() -> Data {
-        guard let pathToJokes = Bundle.main.path(forResource: "starWars", ofType: "json") else {return Data()}
-        let url = URL(fileURLWithPath: pathToJokes)
+        guard let pathToStarWars = Bundle.main.path(forResource: "starWars", ofType: "json") else {return Data()}
+        let url = URL(fileURLWithPath: pathToStarWars)
         do {
             let data = try Data(contentsOf: url)
             return data
