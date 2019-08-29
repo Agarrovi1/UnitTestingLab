@@ -33,10 +33,11 @@ class JokeViewController: UIViewController {
         super.viewDidLoad()
         jokeTableView.dataSource = self
         getDataFromJokeJSON()
-
-        // Do any additional setup after loading the view.
     }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destination = segue.destination as? JokeDetailViewController, let indexPath = jokeTableView.indexPathForSelectedRow else {return}
+        destination.joke = jokes[indexPath.row]
+    }
 
 }
 extension JokeViewController: UITableViewDataSource {
