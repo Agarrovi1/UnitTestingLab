@@ -54,5 +54,38 @@ class Unit_Testing_LabTests: XCTestCase {
         }
         return Data()
     }
+    
+    //MARK: -- Star Wars Tests
+    func testStarWarsResultsExists() {
+        let data = getDataFromStarWarsJSON()
+        let episodes = StarWars.getEpisodes(from: data)
+        XCTAssertTrue(episodes != nil, "There is nothing in .results of StarWars")
+    }
+    func testStarWarsResultIsSevenCount() {
+        let data = getDataFromStarWarsJSON()
+        let episodes = StarWars.getEpisodes(from: data)
+        XCTAssertTrue(episodes.count == 7, "There is nothing in .results of StarWars")
+    }
+    func testOpeningCrawlExists() {
+        let data = getDataFromStarWarsJSON()
+        let episodes = StarWars.getEpisodes(from: data)
+        for a in episodes {
+            if a.opening_crawl == "" {
+                XCTAssertTrue(false, "there was nothing in opening crawl")
+            }
+        }
+        XCTAssertTrue(true, "there are opening crawls")
+    }
+    private func getDataFromStarWarsJSON() -> Data {
+        guard let pathToJokes = Bundle.main.path(forResource: "starWars", ofType: "json") else {return Data()}
+        let url = URL(fileURLWithPath: pathToJokes)
+        do {
+            let data = try Data(contentsOf: url)
+            return data
+        } catch {
+            print(error)
+        }
+        return Data()
+    }
 
 }
