@@ -35,7 +35,7 @@ class Unit_Testing_LabTests: XCTestCase {
     func testJokesExists() {
         let data = getDataFromJokeJSON()
         let jokes = Jokes.getJokes(from: data)
-        XCTAssertTrue(jokes != nil, "array from Jokes.getJokes() does not exist")
+        XCTAssertTrue(jokes.count > 0, "array from Jokes.getJokes() does not exist")
     }
     func testJokesHasCountTen() {
         let data = getDataFromJokeJSON()

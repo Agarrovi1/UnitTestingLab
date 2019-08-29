@@ -7,3 +7,20 @@
 //
 
 import Foundation
+struct StarWars: Codable {
+    var results: [Results]
+    static func getEpisodes(from data: Data) -> [Results] {
+        do {
+            let episodes = try JSONDecoder().decode(StarWars.self, from: data)
+            return episodes.results
+        } catch {
+            print(error)
+        }
+        return [Results]()
+    }
+}
+
+struct Results: Codable {
+    var title: String
+    var opening_crawl: String
+}
