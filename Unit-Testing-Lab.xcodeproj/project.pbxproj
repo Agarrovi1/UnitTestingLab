@@ -21,6 +21,8 @@
 		4D9D9C2123184F1B004CF6F9 /* trivia.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D9D9C1F23184F1B004CF6F9 /* trivia.json */; };
 		4D9D9C2323184FC9004CF6F9 /* JokeStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D9C2223184FC9004CF6F9 /* JokeStruct.swift */; };
 		4D9D9C2423184FC9004CF6F9 /* JokeStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D9C2223184FC9004CF6F9 /* JokeStruct.swift */; };
+		4D9D9C2623185DD5004CF6F9 /* StarWarsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D9C2523185DD5004CF6F9 /* StarWarsStruct.swift */; };
+		4D9D9C2723185DD5004CF6F9 /* StarWarsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D9C2523185DD5004CF6F9 /* StarWarsStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,7 @@
 		4D9D9C1C23184F10004CF6F9 /* starWars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = starWars.json; sourceTree = "<group>"; };
 		4D9D9C1F23184F1B004CF6F9 /* trivia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trivia.json; sourceTree = "<group>"; };
 		4D9D9C2223184FC9004CF6F9 /* JokeStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeStruct.swift; sourceTree = "<group>"; };
+		4D9D9C2523185DD5004CF6F9 /* StarWarsStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,7 @@
 				4D9D9BF923184DFE004CF6F9 /* AppDelegate.swift */,
 				4D9D9BFB23184DFE004CF6F9 /* ViewController.swift */,
 				4D9D9C2223184FC9004CF6F9 /* JokeStruct.swift */,
+				4D9D9C2523185DD5004CF6F9 /* StarWarsStruct.swift */,
 				4D9D9BFD23184DFE004CF6F9 /* Main.storyboard */,
 				4D9D9C0023184E00004CF6F9 /* Assets.xcassets */,
 				4D9D9C0223184E00004CF6F9 /* LaunchScreen.storyboard */,
@@ -222,6 +226,7 @@
 				4D9D9BFC23184DFE004CF6F9 /* ViewController.swift in Sources */,
 				4D9D9C2323184FC9004CF6F9 /* JokeStruct.swift in Sources */,
 				4D9D9BFA23184DFE004CF6F9 /* AppDelegate.swift in Sources */,
+				4D9D9C2623185DD5004CF6F9 /* StarWarsStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +236,7 @@
 			files = (
 				4D9D9C0F23184E00004CF6F9 /* Unit_Testing_LabTests.swift in Sources */,
 				4D9D9C2423184FC9004CF6F9 /* JokeStruct.swift in Sources */,
+				4D9D9C2723185DD5004CF6F9 /* StarWarsStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
