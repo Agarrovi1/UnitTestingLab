@@ -29,6 +29,8 @@
 		4D9D9C3123188078004CF6F9 /* JokeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D9C2F23188078004CF6F9 /* JokeDetailViewController.swift */; };
 		4D9D9C3323188788004CF6F9 /* StarWarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D9C3223188788004CF6F9 /* StarWarsViewController.swift */; };
 		4D9D9C3423188788004CF6F9 /* StarWarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D9C3223188788004CF6F9 /* StarWarsViewController.swift */; };
+		4D9D9C3623188A9D004CF6F9 /* StarWarsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D9C3523188A9D004CF6F9 /* StarWarsDetailViewController.swift */; };
+		4D9D9C3723188A9D004CF6F9 /* StarWarsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D9C3523188A9D004CF6F9 /* StarWarsDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,7 @@
 		4D9D9C2823186C45004CF6F9 /* TriviaStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TriviaStruct.swift; path = ../TriviaStruct.swift; sourceTree = "<group>"; };
 		4D9D9C2F23188078004CF6F9 /* JokeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeDetailViewController.swift; sourceTree = "<group>"; };
 		4D9D9C3223188788004CF6F9 /* StarWarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsViewController.swift; sourceTree = "<group>"; };
+		4D9D9C3523188A9D004CF6F9 /* StarWarsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +143,7 @@
 				4D9D9BFB23184DFE004CF6F9 /* JokeViewController.swift */,
 				4D9D9C2F23188078004CF6F9 /* JokeDetailViewController.swift */,
 				4D9D9C3223188788004CF6F9 /* StarWarsViewController.swift */,
+				4D9D9C3523188A9D004CF6F9 /* StarWarsDetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -257,6 +261,7 @@
 				4D9D9C3323188788004CF6F9 /* StarWarsViewController.swift in Sources */,
 				4D9D9BFA23184DFE004CF6F9 /* AppDelegate.swift in Sources */,
 				4D9D9C2623185DD5004CF6F9 /* StarWarsStruct.swift in Sources */,
+				4D9D9C3623188A9D004CF6F9 /* StarWarsDetailViewController.swift in Sources */,
 				4D9D9C2923186C45004CF6F9 /* TriviaStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +273,7 @@
 				4D9D9C0F23184E00004CF6F9 /* Unit_Testing_LabTests.swift in Sources */,
 				4D9D9C3123188078004CF6F9 /* JokeDetailViewController.swift in Sources */,
 				4D9D9C2A23186C45004CF6F9 /* TriviaStruct.swift in Sources */,
+				4D9D9C3723188A9D004CF6F9 /* StarWarsDetailViewController.swift in Sources */,
 				4D9D9C3423188788004CF6F9 /* StarWarsViewController.swift in Sources */,
 				4D9D9C2423184FC9004CF6F9 /* JokeStruct.swift in Sources */,
 				4D9D9C2723185DD5004CF6F9 /* StarWarsStruct.swift in Sources */,

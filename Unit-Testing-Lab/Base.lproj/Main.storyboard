@@ -106,7 +106,7 @@
             </objects>
             <point key="canvasLocation" x="-222" y="402"/>
         </scene>
-        <!--StarWars-->
+        <!--Star Wars View Controller-->
         <scene sceneID="xYz-rO-SOM">
             <objects>
                 <viewController id="L5m-Oz-xT3" customClass="StarWarsViewController" customModule="Unit_Testing_Lab" customModuleProvider="target" sceneMemberID="viewController">
@@ -115,7 +115,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CJh-Mo-A5l">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="starWarCell" textLabel="YrF-gP-dag" style="IBUITableViewCellStyleDefault" id="28s-Bb-qhW">
@@ -134,6 +134,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="bIT-90-LF3" kind="show" id="U1q-XX-uL9"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -147,14 +150,47 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rSb-9B-lcT"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="StarWars" id="V77-ac-ebx"/>
+                    <navigationItem key="navigationItem" id="wE1-tV-5ta"/>
                     <connections>
                         <outlet property="movieTableView" destination="CJh-Mo-A5l" id="6Sn-cO-3fh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O83-Pi-XLb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-222" y="-246"/>
+            <point key="canvasLocation" x="686.95652173913049" y="-246.42857142857142"/>
+        </scene>
+        <!--Star Wars Detail View Controller-->
+        <scene sceneID="eya-qP-m9w">
+            <objects>
+                <viewController id="bIT-90-LF3" customClass="StarWarsDetailViewController" customModule="Unit_Testing_Lab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iOA-5w-yEn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Iwe-DX-8b4">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MkT-n4-HgS" firstAttribute="trailing" secondItem="Iwe-DX-8b4" secondAttribute="trailing" id="DXQ-LC-cNR"/>
+                            <constraint firstItem="MkT-n4-HgS" firstAttribute="bottom" secondItem="Iwe-DX-8b4" secondAttribute="bottom" id="G7g-AG-YQd"/>
+                            <constraint firstItem="Iwe-DX-8b4" firstAttribute="leading" secondItem="MkT-n4-HgS" secondAttribute="leading" id="SwD-l4-Fwg"/>
+                            <constraint firstItem="Iwe-DX-8b4" firstAttribute="top" secondItem="MkT-n4-HgS" secondAttribute="top" id="vgH-Wl-rET"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MkT-n4-HgS"/>
+                    </view>
+                    <connections>
+                        <outlet property="openingCrawlTextView" destination="Iwe-DX-8b4" id="TAH-qZ-P5u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ql9-Xm-gIa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1387" y="-246"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="xJM-zA-z0a">
@@ -166,7 +202,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="L5m-Oz-xT3" kind="relationship" relationship="viewControllers" id="dn3-ac-QRX"/>
+                        <segue destination="vCK-VO-d8f" kind="relationship" relationship="viewControllers" id="dn3-ac-QRX"/>
                         <segue destination="Eb7-5m-9kE" kind="relationship" relationship="viewControllers" id="iGp-vf-duH"/>
                         <segue destination="hh2-aG-voL" kind="relationship" relationship="viewControllers" id="eSG-KX-gT4"/>
                     </connections>
@@ -193,6 +229,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsn-au-rYb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-223.18840579710147" y="-917.41071428571422"/>
+        </scene>
+        <!--StarWars-->
+        <scene sceneID="vOT-Id-qMt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vCK-VO-d8f" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="StarWars" id="V77-ac-ebx"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8mv-QV-2i7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="L5m-Oz-xT3" kind="relationship" relationship="rootViewController" id="bUR-Kg-mln"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rT5-bm-cPm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-223.18840579710147" y="-246.42857142857142"/>
         </scene>
     </scenes>
 </document>
