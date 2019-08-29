@@ -30,5 +30,24 @@ class Unit_Testing_LabTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    //MARK: -- Joke Model Tests
+    func testJokesHasCountTen() {
+        let data = getDataFromJokeJSON()
+        let jokes = Jokes.getJokes(from: data)
+        XCTAssertTrue(jokes.count == 10, "there are \(jokes.count) in jokes.count")
+    }
+    
+    private func getDataFromJokeJSON() -> Data {
+        guard let pathToJokes = Bundle.main.path(forResource: "jokes", ofType: "json") else {return Data()}
+        let url = URL(fileURLWithPath: pathToJokes)
+        do {
+            let data = try Data(contentsOf: url)
+            return data
+        } catch {
+            print(error)
+        }
+        return Data()
+    }
 
 }
