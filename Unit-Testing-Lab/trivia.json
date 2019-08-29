@@ -1,0 +1,123 @@
+{
+    "response_code": 0,
+    "results": [
+        {
+            "category": "Celebrities",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "By%20what%20name%20is%20Carlos%20Estevez%20better%20known%3F%20",
+            "correct_answer": "Charlie%20Sheen",
+            "incorrect_answers": [
+                "Ricky%20Martin",
+                "Bruno%20Mars",
+                "Joaquin%20Phoenix"
+            ]
+        },
+        {
+            "category": "Science%20%26%20Nature",
+            "type": "multiple",
+            "difficulty": "hard",
+            "question": "Which%20is%20not%20a%20type%20of%20neuron%3F",
+            "correct_answer": "Perceptual%20Neuron",
+            "incorrect_answers": [
+                "Sensory%20Neuron",
+                "Motor%20Neuron",
+                "Interneuron"
+            ]
+        },
+        {
+            "category": "Geography",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "What%20is%20the%20largest%20lake%20in%20the%20African%20continent%3F",
+            "correct_answer": "Lake%20Victoria",
+            "incorrect_answers": [
+                "Lake%20Tanganyika",
+                "Lake%20Malawi",
+                "Lake%20Turkana"
+            ]
+        },
+        {
+            "category": "General%20Knowledge",
+            "type": "multiple",
+            "difficulty": "hard",
+            "question": "What%20is%20the%20romanized%20Chinese%20word%20for%20%22airplane%22%3F",
+            "correct_answer": "Feiji",
+            "incorrect_answers": [
+                "Qiche",
+                "Zongxian",
+                "Huojian"
+            ]
+        },
+        {
+            "category": "Entertainment%3A%20Video%20Games",
+            "type": "multiple",
+            "difficulty": "hard",
+            "question": "In%20the%20game%20Nuclear%20Throne%2C%20what%20organization%20chases%20the%20player%20character%20throughout%20the%20game%3F",
+            "correct_answer": "The%20I.D.P.D",
+            "incorrect_answers": [
+                "The%20Fishmen",
+                "The%20Bandits",
+                "The%20Y.V.G.G"
+            ]
+        },
+        {
+            "category": "Entertainment%3A%20Film",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "What%20was%20the%20name%20of%20the%20protagonist%20in%20the%20movie%20Commando%20%281985%29%3F",
+            "correct_answer": "John%20Matrix",
+            "incorrect_answers": [
+                "Ben%20Richards",
+                "Douglas%20Quaid",
+                "Harry%20Tasker"
+            ]
+        },
+        {
+            "category": "Entertainment%3A%20Japanese%20Anime%20%26%20Manga",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "In%20%22One%20Piece%22%2C%20which%20one%20of%20the%20following%20is%20NOT%20an%20Ancient%20Weapon%3F",
+            "correct_answer": "Jupiter",
+            "incorrect_answers": [
+                "Uranus",
+                "Poseidon",
+                "Pluton"
+            ]
+        },
+        {
+            "category": "Entertainment%3A%20Music",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Where%20did%20the%20British%20Boy%20Band%20%22Bros%22%20come%20from%3F",
+            "correct_answer": "Camberley",
+            "incorrect_answers": [
+                "Guildford",
+                "Aldershot",
+                "Bagshot"
+            ]
+        },
+        {
+            "category": "Entertainment%3A%20Cartoon%20%26%20Animations",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "How%20many%20episodes%20were%20in%20season%20five%20of%20Samurai%20Jack%3F",
+            "correct_answer": "10",
+            "incorrect_answers": [
+                "12",
+                "11",
+                "13"
+            ]
+        },
+        {
+            "category": "Entertainment%3A%20Video%20Games",
+            "type": "boolean",
+            "difficulty": "medium",
+            "question": "The%20scrapped%20Sonic%20the%20Hedgehog%202%20level%20%22Hidden%20Palace%20Zone%22%20was%20later%20reused%20in%20the%20iOS%20port%20of%20the%20game.%20",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ]
+        }
+    ]
+}

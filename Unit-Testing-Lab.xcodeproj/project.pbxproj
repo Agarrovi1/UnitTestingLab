@@ -13,6 +13,12 @@
 		4D9D9C0123184E00004CF6F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D9D9C0023184E00004CF6F9 /* Assets.xcassets */; };
 		4D9D9C0423184E00004CF6F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D9D9C0223184E00004CF6F9 /* LaunchScreen.storyboard */; };
 		4D9D9C0F23184E00004CF6F9 /* Unit_Testing_LabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D9C0E23184E00004CF6F9 /* Unit_Testing_LabTests.swift */; };
+		4D9D9C1A23184EFF004CF6F9 /* jokes.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D9D9C1923184EFF004CF6F9 /* jokes.json */; };
+		4D9D9C1B23184EFF004CF6F9 /* jokes.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D9D9C1923184EFF004CF6F9 /* jokes.json */; };
+		4D9D9C1D23184F10004CF6F9 /* starWars.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D9D9C1C23184F10004CF6F9 /* starWars.json */; };
+		4D9D9C1E23184F10004CF6F9 /* starWars.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D9D9C1C23184F10004CF6F9 /* starWars.json */; };
+		4D9D9C2023184F1B004CF6F9 /* trivia.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D9D9C1F23184F1B004CF6F9 /* trivia.json */; };
+		4D9D9C2123184F1B004CF6F9 /* trivia.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D9D9C1F23184F1B004CF6F9 /* trivia.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,9 @@
 		4D9D9C0A23184E00004CF6F9 /* Unit-Testing-LabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit-Testing-LabTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D9D9C0E23184E00004CF6F9 /* Unit_Testing_LabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit_Testing_LabTests.swift; sourceTree = "<group>"; };
 		4D9D9C1023184E00004CF6F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D9D9C1923184EFF004CF6F9 /* jokes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jokes.json; sourceTree = "<group>"; };
+		4D9D9C1C23184F10004CF6F9 /* starWars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = starWars.json; sourceTree = "<group>"; };
+		4D9D9C1F23184F1B004CF6F9 /* trivia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trivia.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +86,9 @@
 		4D9D9BF823184DFE004CF6F9 /* Unit-Testing-Lab */ = {
 			isa = PBXGroup;
 			children = (
+				4D9D9C1923184EFF004CF6F9 /* jokes.json */,
+				4D9D9C1C23184F10004CF6F9 /* starWars.json */,
+				4D9D9C1F23184F1B004CF6F9 /* trivia.json */,
 				4D9D9BF923184DFE004CF6F9 /* AppDelegate.swift */,
 				4D9D9BFB23184DFE004CF6F9 /* ViewController.swift */,
 				4D9D9BFD23184DFE004CF6F9 /* Main.storyboard */,
@@ -178,7 +190,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D9D9C0423184E00004CF6F9 /* LaunchScreen.storyboard in Resources */,
+				4D9D9C1D23184F10004CF6F9 /* starWars.json in Resources */,
+				4D9D9C2023184F1B004CF6F9 /* trivia.json in Resources */,
 				4D9D9C0123184E00004CF6F9 /* Assets.xcassets in Resources */,
+				4D9D9C1A23184EFF004CF6F9 /* jokes.json in Resources */,
 				4D9D9BFF23184DFE004CF6F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,6 +202,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D9D9C1E23184F10004CF6F9 /* starWars.json in Resources */,
+				4D9D9C1B23184EFF004CF6F9 /* jokes.json in Resources */,
+				4D9D9C2123184F1B004CF6F9 /* trivia.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
