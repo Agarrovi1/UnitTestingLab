@@ -109,14 +109,48 @@
         <!--StarWars-->
         <scene sceneID="xYz-rO-SOM">
             <objects>
-                <viewController id="L5m-Oz-xT3" sceneMemberID="viewController">
+                <viewController id="L5m-Oz-xT3" customClass="StarWarsViewController" customModule="Unit_Testing_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NE6-F4-nvb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CJh-Mo-A5l">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="starWarCell" textLabel="YrF-gP-dag" style="IBUITableViewCellStyleDefault" id="28s-Bb-qhW">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="28s-Bb-qhW" id="kEw-tA-who">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YrF-gP-dag">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rSb-9B-lcT" firstAttribute="bottom" secondItem="CJh-Mo-A5l" secondAttribute="bottom" id="CnY-UW-gZ0"/>
+                            <constraint firstItem="rSb-9B-lcT" firstAttribute="trailing" secondItem="CJh-Mo-A5l" secondAttribute="trailing" id="KrC-aj-yun"/>
+                            <constraint firstItem="CJh-Mo-A5l" firstAttribute="leading" secondItem="rSb-9B-lcT" secondAttribute="leading" id="ksc-gA-ruC"/>
+                            <constraint firstItem="CJh-Mo-A5l" firstAttribute="top" secondItem="rSb-9B-lcT" secondAttribute="top" id="uD5-bZ-c0a"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rSb-9B-lcT"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="StarWars" id="V77-ac-ebx"/>
+                    <connections>
+                        <outlet property="movieTableView" destination="CJh-Mo-A5l" id="6Sn-cO-3fh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O83-Pi-XLb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
