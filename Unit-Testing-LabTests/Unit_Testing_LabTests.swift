@@ -57,6 +57,7 @@ class Unit_Testing_LabTests: XCTestCase {
     
     //MARK: -- Star Wars Tests
     func testStarWarsResultsExists() {
+        
         let data = getDataFromStarWarsJSON()
         let episodes = StarWars.getEpisodes(from: data)
         XCTAssertTrue(episodes != nil, "There is nothing in .results of StarWars")
@@ -86,6 +87,64 @@ class Unit_Testing_LabTests: XCTestCase {
             print(error)
         }
         return Data()
+    }
+    
+    //MARK: -- Trivia Tests
+    func testGetTriviaIsNotEmpty() {
+        
+        let data = getDataFromTriviaJSON()
+        do {
+        let trivias = try Trivia.getTrivias(from: data)
+              XCTAssertTrue(trivias.count == 10, "trivias is empty, \(trivias.count)")
+        } catch {
+           print(error)
+        }
+      
+    
+    }
+    
+    func getDataFromTriviaJSON() -> Data {
+        
+        guard let pathToJokes = Bundle.main.path(forResource: "trivia", ofType: "json") else {return Data()}
+        let url = URL(fileURLWithPath: pathToJokes)
+        do {
+            let data = try Data(contentsOf: url)
+            print("we got data")
+            return data
+        } catch let jsonError {
+            fatalError("error: \(jsonError)")
+        }
+        
+    }
+    
+    
+    func testIfQuestionHasPercentSymbol() {
+        let data = getDataFromTriviaJSON()
+        do {
+        let trivias = try Trivia.getTrivias(from: data)
+        for a in trivias {
+            if a.takePercentFromQuestion().contains("%") {
+                XCTAssertTrue(false, "expected no % but, \(a.takePercentFromQuestion())")
+            }
+        }
+        XCTAssertTrue(true, "no % in question")
+        } catch {
+            print(error)
+        }
+    }
+    func testIfCorrectHasPercentSymbol() {
+        let data = getDataFromTriviaJSON()
+        do {
+            let trivias = try Trivia.getTrivias(from: data)
+            for a in trivias {
+                if a.takePercentFromCorrectAnswer().contains("%") {
+                    XCTAssertTrue(false, "expected no % but, \(a.takePercentFromCorrectAnswer())")
+                }
+            }
+            XCTAssertTrue(true, "no % in question")
+        } catch {
+            print(error)
+        }
     }
 
 }
