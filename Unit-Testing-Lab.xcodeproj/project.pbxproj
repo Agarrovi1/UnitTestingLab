@@ -53,7 +53,7 @@
 		4D9D9C1F23184F1B004CF6F9 /* trivia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trivia.json; sourceTree = "<group>"; };
 		4D9D9C2223184FC9004CF6F9 /* JokeStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeStruct.swift; sourceTree = "<group>"; };
 		4D9D9C2523185DD5004CF6F9 /* StarWarsStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsStruct.swift; sourceTree = "<group>"; };
-		4D9D9C2823186C45004CF6F9 /* TriviaStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaStruct.swift; sourceTree = "<group>"; };
+		4D9D9C2823186C45004CF6F9 /* TriviaStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TriviaStruct.swift; path = ../TriviaStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +99,8 @@
 				4D9D9C1C23184F10004CF6F9 /* starWars.json */,
 				4D9D9C1F23184F1B004CF6F9 /* trivia.json */,
 				4D9D9BF923184DFE004CF6F9 /* AppDelegate.swift */,
-				4D9D9BFB23184DFE004CF6F9 /* ViewController.swift */,
-				4D9D9C2223184FC9004CF6F9 /* JokeStruct.swift */,
-				4D9D9C2523185DD5004CF6F9 /* StarWarsStruct.swift */,
-				4D9D9C2823186C45004CF6F9 /* TriviaStruct.swift */,
+				4D9D9C2E23187F8A004CF6F9 /* ViewController */,
+				4D9D9C2B23187F36004CF6F9 /* Models */,
 				4D9D9BFD23184DFE004CF6F9 /* Main.storyboard */,
 				4D9D9C0023184E00004CF6F9 /* Assets.xcassets */,
 				4D9D9C0223184E00004CF6F9 /* LaunchScreen.storyboard */,
@@ -118,6 +116,24 @@
 				4D9D9C1023184E00004CF6F9 /* Info.plist */,
 			);
 			path = "Unit-Testing-LabTests";
+			sourceTree = "<group>";
+		};
+		4D9D9C2B23187F36004CF6F9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D9D9C2223184FC9004CF6F9 /* JokeStruct.swift */,
+				4D9D9C2523185DD5004CF6F9 /* StarWarsStruct.swift */,
+				4D9D9C2823186C45004CF6F9 /* TriviaStruct.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4D9D9C2E23187F8A004CF6F9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4D9D9BFB23184DFE004CF6F9 /* ViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
