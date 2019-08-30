@@ -11,6 +11,12 @@ enum JSONError: Error {
     case decodingError(Error)
 }
 
+protocol AnsInfo {
+    var correctAns: String {get}
+    var incorrectAns: [String] {get}
+    func makeArrOfAns() -> [String]
+}
+
 struct Trivia: Codable {
     let results: [TriviaInfo]
     static func getTrivias(from data: Data) throws -> [TriviaInfo] {
@@ -30,9 +36,9 @@ struct TriviaInfo: Codable {
     
     func takePercentFromQuestion() -> String {
         if let question = question.removingPercentEncoding {
-            return question + "?"
+            return question
         }
-        return question + "?"
+        return question
     }
     func takePercentFromCorrectAnswer() -> String {
         if let answer = correct_answer.removingPercentEncoding {
