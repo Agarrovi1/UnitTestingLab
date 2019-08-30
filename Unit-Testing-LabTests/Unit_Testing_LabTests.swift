@@ -105,8 +105,8 @@ class Unit_Testing_LabTests: XCTestCase {
     
     func getDataFromTriviaJSON() -> Data {
         
-        guard let pathToJokes = Bundle.main.path(forResource: "trivia", ofType: "json") else {return Data()}
-        let url = URL(fileURLWithPath: pathToJokes)
+        guard let pathToTrivia = Bundle.main.path(forResource: "trivia", ofType: "json") else {return Data()}
+        let url = URL(fileURLWithPath: pathToTrivia)
         do {
             let data = try Data(contentsOf: url)
             print("we got data")
@@ -114,7 +114,6 @@ class Unit_Testing_LabTests: XCTestCase {
         } catch let jsonError {
             fatalError("error: \(jsonError)")
         }
-        
     }
     
     
